@@ -1,1 +1,3 @@
 # WordWizz
+
+Moja aplikacja
