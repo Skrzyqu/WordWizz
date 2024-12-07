@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista słów</title>
+</head>
+<body>
+    <h1>Lista słów</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Słowo po polsku</th>
+            <th>Słowo po niemiecku</th>
+        </tr>
+        {% for word in words %}
+        <tr>
+            <td>{{ word.id }}</td>
+            <td>{{ word.polish_word }}</td>
+            <td>{{ word.german_word }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
